@@ -1,7 +1,8 @@
 import mongoose, { Document,CallbackError, Model } from "mongoose";
 import crypto from 'crypto'
 
-interface IUser extends Document {
+export interface IUser extends Document {
+    _id: string;
     username: string;
     email: string;
     password: string;
